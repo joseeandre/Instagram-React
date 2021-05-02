@@ -30,5 +30,10 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "./"
+  "homepage": "./",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
