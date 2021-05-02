@@ -1,0 +1,466 @@
+body {
+    font-family: 'Roboto';
+}
+
+strong {
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.topo-mobile {
+    display: none;
+}
+
+
+/* parte de cima */
+
+.caixa-topo {
+    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
+    background-color: white;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.topo {
+    width: 935px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo img {
+    width: 105px;
+    padding-top: 10px;
+}
+
+.topo ion-icon {
+    font-size: 25px;
+    color: black;
+}
+
+.topo .separador-vertical {
+    height: 22px;
+    width: 1px;
+    background-color: #DBDBDB;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.caixa-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 215px;
+}
+
+.topo input {
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.topo input::placeholder {
+    text-align: center;
+    color: #979797;
+}
+
+.caixa-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 215px;
+}
+
+.caixa-icons ion-icon {
+    font-size: 25px;
+    color: black;
+    margin-left: 20px;
+}
+
+
+/* feed */
+
+.feed {
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+.conteudo {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* caixa principal */
+
+.caixa-principal {
+    width: 614px;
+}
+
+
+/* stories */
+
+.caixa-stories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 614px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    position: relative;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.story {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.story .foto-stories {
+    display: flex;
+    align-items: center;
+    padding: 4.8px;
+    background-image: url(../pictures/stories_background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+}
+
+.story .nome-stories {
+    font-size: 12px;
+    color: black;
+    margin-top: 4px;
+}
+
+.caixa-stories ion-icon {
+    position: absolute;
+    font-size: 30px;
+    top: 46px;
+    right: 9px;
+    color: #FFFFFF;
+}
+
+
+/* posts */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 614px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 60px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.topo-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.topo-post a {
+    color: black;
+}
+
+.topo-post img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 15px;
+}
+
+.topo-post .nome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foto-post {
+    width: 612px;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.foto-post img,
+.foto-post video {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 14px;
+}
+
+.icones-post {
+    width: 614px;
+    height: 40px;
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+.icones-post a {
+    margin-right: 8px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.like {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 17px;
+}
+
+.like p {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.comentarios {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+
+.comentarios p {
+    color: black;
+}
+
+.comentarios strong {
+    margin-right: 10px;
+}
+
+.comentarios>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 18px;
+    width: 100%;
+}
+
+.mais-comentarios a {
+    color: #8E8E8E;
+    vertical-align: baseline;
+}
+
+.comentario ion-icon {
+    font-size: 12px;
+    position: absolute;
+    top: 3;
+    right: 18px;
+    cursor: pointer;
+}
+
+.hora {
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.comentar {
+    width: 614px;
+    height: 40px;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 14px;
+    border-top: 1px solid #DBDBDB;
+    box-sizing: border-box;
+}
+
+.comentar a {
+    margin-right: 8px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.comentar input {
+    border: none;
+    width: 400px; 
+}
+
+.comentar input::placeholder {
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.comentar>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comentar .publicar {
+    color: #139EF2;
+    font-size: 14px;
+}
+
+
+/* caixa sugeridos */
+
+.caixa-sugeridos {
+    margin-top: 107px;
+    width: 300px;
+    position: fixed;
+    top: -2px;
+    right: calc((100% - 940px) / 2);
+}
+
+.caixa-sugeridos .perfil {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.caixa-sugeridos .perfil img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 10px;
+}
+
+.caixa-sugeridos p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.caixa-sugeridos .perfil-nome {
+    font-weight: normal;
+    color: #8E8E8E;
+}
+
+.sugestoes-topo {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa-sugeridos .sugestoes-titulo {
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: normal;
+}
+
+.sugestoes-topo p {
+    font-size: 12px;
+}
+
+.perfis-sugeridos {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.perfis-sugeridos img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 15px;
+}
+
+.perfil-sugerido {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.azul {
+    margin-top: 16px;
+    color: #139EF2;
+    font-size: 12px;
+}
+
+
+/* creditos */
+
+.creditos {
+    margin-top: 33px;
+    width: 100%;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+}
+
+.creditos ul {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.creditos li {
+    flex-shrink: 0;
+    margin: 0px 2px;
+}
+
+.creditos li:nth-last-child(n+2)::after {
+    content: "•";
+    color: #c7c7c7;
+    padding-left: 2px;
+    font-size: 11px;
+}
+
+.creditos .creditos-fonte {
+    font-size: 11px;
+    color: #c7c7c7;
+}
